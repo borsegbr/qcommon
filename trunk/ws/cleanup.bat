@@ -1,0 +1,13 @@
+cd qtl\str\frep
+call cleanup.bat
+cd qtl\str\test_regexp
+call cleanup.bat
+cd ..\..\..\qgl
+call cleanup.bat
+cd ..
+cd qglPhysicalTest
+call cleanup.bat
+cd ..
+cd qtl\math
+call cleanup.bat
+cd ..\..

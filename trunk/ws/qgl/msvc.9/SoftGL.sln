@@ -1,0 +1,28 @@
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "qgl", "qgl\qgl.vcproj", "{04466377-2222-43B5-90AF-82560AB3B85A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "QglDemo", "QglDemo\QglDemo.vcproj", "{89BAD513-5606-4E12-8B84-B3594E851364}"
+	ProjectSection(ProjectDependencies) = postProject
+		{04466377-2222-43B5-90AF-82560AB3B85A} = {04466377-2222-43B5-90AF-82560AB3B85A}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{04466377-2222-43B5-90AF-82560AB3B85A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{04466377-2222-43B5-90AF-82560AB3B85A}.Debug|Win32.Build.0 = Debug|Win32
+		{04466377-2222-43B5-90AF-82560AB3B85A}.Release|Win32.ActiveCfg = Release|Win32
+		{04466377-2222-43B5-90AF-82560AB3B85A}.Release|Win32.Build.0 = Release|Win32
+		{89BAD513-5606-4E12-8B84-B3594E851364}.Debug|Win32.ActiveCfg = Debug|Win32
+		{89BAD513-5606-4E12-8B84-B3594E851364}.Debug|Win32.Build.0 = Debug|Win32
+		{89BAD513-5606-4E12-8B84-B3594E851364}.Release|Win32.ActiveCfg = Release|Win32
+		{89BAD513-5606-4E12-8B84-B3594E851364}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
