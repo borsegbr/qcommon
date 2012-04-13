@@ -86,6 +86,7 @@ void WireframedSphere::DrawWireframe (Screen *pScreen, WireframeStyle *pStyle /*
         {
             polygon[j][Vector3f::k_z] = m_Center[Vector3f::k_z] - h;
         }
+
         pScreen->ProjPolygon(pScreenSpecStyle, polygon);
     }
 

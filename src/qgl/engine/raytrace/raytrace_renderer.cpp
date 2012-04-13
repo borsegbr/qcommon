@@ -38,6 +38,11 @@ void RaytraceRenderer::Render ()
              * ...
              */
 
+			if (x == 70 && y == 93)
+            {
+                x = 70;
+            }
+
             m_pScreen->CreateRay(fx, fy, ray);
 
             Light                   light;

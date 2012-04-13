@@ -1,13 +1,14 @@
-Microsoft Visual Studio Solution File, Format Version 10.00
-# Visual Studio 2008
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "qgl", "qgl\qgl.vcproj", "{04466377-2222-43B5-90AF-82560AB3B85A}"
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "qgl", "qgl\qgl.vcxproj", "{04466377-2222-43B5-90AF-82560AB3B85A}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "QglDemo", "QglDemo\QglDemo.vcproj", "{89BAD513-5606-4E12-8B84-B3594E851364}"
-	ProjectSection(ProjectDependencies) = postProject
-		{04466377-2222-43B5-90AF-82560AB3B85A} = {04466377-2222-43B5-90AF-82560AB3B85A}
-	EndProjectSection
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "QglDemo", "QglDemo\QglDemo.vcxproj", "{89BAD513-5606-4E12-8B84-B3594E851364}"
 EndProject
 Global
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
 		Release|Win32 = Release|Win32

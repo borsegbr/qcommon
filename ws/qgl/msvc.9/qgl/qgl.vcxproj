@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{04466377-2222-43B5-90AF-82560AB3B85A}</ProjectGuid>
+    <RootNamespace>qgl</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../../../bin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Debug\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../../../bin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Release\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/GR %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../../../../inc/qgl;../../../../src/qgl/base;../../../../src/qgl/base/matrix;../../../../src/qgl/base/object;../../../../src/qgl/base/optic;../../../../src/qgl/base/world;../../../../src/qgl/engine/wireframe;../../../../src/qgl/engine/raytrace;../../../../src/qgl/extended/objects;../../../../src/qgl/raster;D:\Documents\quanben\Projects\generalvs\qcommon\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)qgl.dll</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)qgl.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <ImportLibrary>../../../../lib/qgl.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>../../../../inc/qgl;../../../../src/qgl/base;../../../../src/qgl/base/matrix;../../../../src/qgl/base/object;../../../../src/qgl/base/optic;../../../../src/qgl/base/world;../../../../src/qgl/engine/wireframe;../../../../src/qgl/engine/raytrace;../../../../src/qgl/extended/objects;../../../../src/qgl/raster;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)qgl.dll</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <ImportLibrary>../../../../lib/qgl.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\src\qgl\extended\objects\box.cpp" />
+    <ClCompile Include="..\..\..\..\src\qgl\extended\objects\csg.cpp" />
+    <ClCompile Include="..\..\..\..\src\qgl\extended\objects\quadratic.cpp" />
+    <ClCompile Include="..\..\..\..\src\qgl\extended\objects\sphere.cpp" />
+    <ClCompile Include="..\..\..\..\src\qgl\extended\objects\sphere_light.cpp" />
+    <ClCompile Include="..\..\..\..\src\qgl\raster\clip.cpp" />
+    <ClCompile Include="..\..\..\..\src\qgl\raster\fill.cpp" />
+    <ClCompile Include="..\..\..\..\src\qgl\raster\line.cpp" />
+    <ClCompile Include="..\..\..\..\src\qgl\raster\zbuf.cpp" />
+    <ClCompile Include="..\..\..\..\inc\qul\debug\trace.cpp" />
+    <ClCompile Include="..\..\..\..\src\qgl\engine\raytrace\patterned_optical.cpp" />
+    <ClCompile Include="..\..\..\..\src\qgl\engine\raytrace\patterned_surface.cpp" />
+    <ClCompile Include="..\..\..\..\src\qgl\engine\raytrace\point_light.cpp" />
+    <ClCompile Include="..\..\..\..\src\qgl\engine\raytrace\raytrace_luminant.cpp" />
+    <ClCompile Include="..\..\..\..\src\qgl\engine\raytrace\raytrace_optical.cpp" />
+    <ClCompile Include="..\..\..\..\src\qgl\engine\raytrace\raytrace_renderer.cpp" />
+    <ClCompile Include="..\..\..\..\src\qgl\engine\raytrace\raytrace_scene.cpp" />
+    <ClCompile Include="..\..\..\..\src\qgl\engine\raytrace\raytrace_surface.cpp" />
+    <ClCompile Include="..\..\..\..\src\qgl\engine\raytrace\simple_ether.cpp" />
+    <ClCompile Include="..\..\..\..\src\qgl\engine\raytrace\simple_optical.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)1.xdc</XMLDocumentationFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename)1.xdc</XMLDocumentationFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\qgl\engine\raytrace\simple_scene.cpp" />
+    <ClCompile Include="..\..\..\..\src\qgl\engine\raytrace\simple_surface.cpp" />
+    <ClCompile Include="..\..\..\..\src\qgl\engine\wireframe\wireframe.cpp" />
+    <ClCompile Include="..\..\..\..\src\qgl\base\matrix\matrix3d.cpp" />
+    <ClCompile Include="..\..\..\..\src\qgl\base\matrix\transformer.cpp" />
+    <ClCompile Include="..\..\..\..\src\qgl\base\matrix\vector3d.cpp" />
+    <ClCompile Include="..\..\..\..\src\qgl\base\object\luminant.cpp" />
+    <ClCompile Include="..\..\..\..\src\qgl\base\object\object.cpp" />
+    <ClCompile Include="..\..\..\..\src\qgl\base\object\optical.cpp" />
+    <ClCompile Include="..\..\..\..\src\qgl\base\object\shape.cpp" />
+    <ClCompile Include="..\..\..\..\src\qgl\base\world\camera.cpp" />
+    <ClCompile Include="..\..\..\..\src\qgl\base\world\renderer.cpp" />
+    <ClCompile Include="..\..\..\..\src\qgl\base\world\scene.cpp" />
+    <ClCompile Include="..\..\..\..\src\qgl\base\world\screen.cpp" />
+    <ClCompile Include="..\..\..\..\src\qgl\base\optic\light.cpp" />
+    <ClCompile Include="..\..\..\..\src\qgl\base\optic\ray.cpp" />
+    <ClCompile Include="..\..\..\..\src\qgl\qgl.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\src\qgl\extended\objects\box.h" />
+    <ClInclude Include="..\..\..\..\src\qgl\extended\objects\csg.h" />
+    <ClInclude Include="..\..\..\..\src\qgl\extended\objects\quadratic.h" />
+    <ClInclude Include="..\..\..\..\src\qgl\extended\objects\sphere.h" />
+    <ClInclude Include="..\..\..\..\src\qgl\extended\objects\sphere_light.h" />
+    <ClInclude Include="..\..\..\..\src\qgl\raster\clip.h" />
+    <ClInclude Include="..\..\..\..\src\qgl\raster\fill.h" />
+    <ClInclude Include="..\..\..\..\src\qgl\raster\line.h" />
+    <ClInclude Include="..\..\..\..\src\qgl\raster\zbuf.h" />
+    <ClInclude Include="..\..\..\..\inc\qul\debug\trace.h" />
+    <ClInclude Include="..\..\..\..\inc\qul\debug\trace_intf.h" />
+    <ClInclude Include="..\..\..\..\src\qgl\engine\raytrace\patterned_optical.h" />
+    <ClInclude Include="..\..\..\..\src\qgl\engine\raytrace\patterned_surface.h" />
+    <ClInclude Include="..\..\..\..\src\qgl\engine\raytrace\point_light.h" />
+    <ClInclude Include="..\..\..\..\src\qgl\engine\raytrace\raytrace_luminant.h" />
+    <ClInclude Include="..\..\..\..\src\qgl\engine\raytrace\raytrace_optical.h" />
+    <ClInclude Include="..\..\..\..\src\qgl\engine\raytrace\raytrace_renderer.h" />
+    <ClInclude Include="..\..\..\..\src\qgl\engine\raytrace\raytrace_scene.h" />
+    <ClInclude Include="..\..\..\..\src\qgl\engine\raytrace\raytrace_surface.h" />
+    <ClInclude Include="..\..\..\..\src\qgl\engine\raytrace\simple_ether.h" />
+    <ClInclude Include="..\..\..\..\src\qgl\engine\raytrace\simple_optical.h" />
+    <ClInclude Include="..\..\..\..\src\qgl\engine\raytrace\simple_scene.h" />
+    <ClInclude Include="..\..\..\..\src\qgl\engine\raytrace\simple_surface.h" />
+    <ClInclude Include="..\..\..\..\src\qgl\engine\wireframe\wireframe.h" />
+    <ClInclude Include="..\..\..\..\src\qgl\base\qgl_common.h" />
+    <ClInclude Include="..\..\..\..\src\qgl\base\matrix\matrix3d.h" />
+    <ClInclude Include="..\..\..\..\src\qgl\base\matrix\transformer.h" />
+    <ClInclude Include="..\..\..\..\src\qgl\base\matrix\vector3d.h" />
+    <ClInclude Include="..\..\..\..\src\qgl\base\object\luminant.h" />
+    <ClInclude Include="..\..\..\..\src\qgl\base\object\object.h" />
+    <ClInclude Include="..\..\..\..\src\qgl\base\object\optical.h" />
+    <ClInclude Include="..\..\..\..\src\qgl\base\object\shape.h" />
+    <ClInclude Include="..\..\..\..\src\qgl\base\world\camera.h" />
+    <ClInclude Include="..\..\..\..\src\qgl\base\world\renderer.h" />
+    <ClInclude Include="..\..\..\..\src\qgl\base\world\scene.h" />
+    <ClInclude Include="..\..\..\..\src\qgl\base\world\screen.h" />
+    <ClInclude Include="..\..\..\..\src\qgl\base\optic\light.h" />
+    <ClInclude Include="..\..\..\..\src\qgl\base\optic\ray.h" />
+    <ClInclude Include="..\..\..\..\inc\qgl\qgl.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
