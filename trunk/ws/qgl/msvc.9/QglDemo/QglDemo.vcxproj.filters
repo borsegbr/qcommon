@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="soruce files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="header files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="resources">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\common\QglDemo\MainFrm.cpp">
+      <Filter>soruce files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\QglDemo\QglDemo.cpp">
+      <Filter>soruce files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\QglDemo\QglDemoDoc.cpp">
+      <Filter>soruce files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\QglDemo\QglDemoView.cpp">
+      <Filter>soruce files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\QglDemo\src\QglDemoView_Line.cpp">
+      <Filter>soruce files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\QglDemo\src\QglDemoView_Render.cpp">
+      <Filter>soruce files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\QglDemo\stdafx.cpp">
+      <Filter>soruce files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\common\QglDemo\MainFrm.h">
+      <Filter>header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\QglDemo\QglDemo.h">
+      <Filter>header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\QglDemo\QglDemoDoc.h">
+      <Filter>header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\QglDemo\QglDemoView.h">
+      <Filter>header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\QglDemo\stdafx.h">
+      <Filter>header files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\QglDemo.ico">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="res\QglDemo.rc2">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="res\QglDemoDoc.ico">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="res\Toolbar.bmp">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="QglDemo.rc">
+      <Filter>resources</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuildStep Include="res\QglDemo.manifest" />
+  </ItemGroup>
+</Project>

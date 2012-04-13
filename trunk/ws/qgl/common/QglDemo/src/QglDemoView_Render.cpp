@@ -33,7 +33,8 @@ void CQglDemoView::SetupCamSystem ()
     Qgl_SetCameraPose(m_hQgl, 6, 0, 0, -1, 0, 0, 0);
 #endif
 #if 1
-    Qgl_SetCameraPose(m_hQgl, 2, -5, 0, 0, 1, 0, 0);
+    //Qgl_SetCameraPose(m_hQgl, 2, -5, 0, 0, 1, 0, 0);
+	Qgl_SetCameraPose(m_hQgl, 4.5, -5, 0, 0, 1, 0, 0);
 #endif
 
     Qgl_SetCameraScr(m_hQgl, m_CamWidth, m_CamHeight, m_CamD);

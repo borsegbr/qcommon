@@ -1,0 +1,276 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="extended">
+      <UniqueIdentifier>{5f062153-3573-47a8-9486-bd61c7b59000}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="extended\objects">
+      <UniqueIdentifier>{c6deea2e-887a-4d30-941c-cf60af3e8d45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="raster">
+      <UniqueIdentifier>{a3667653-a59f-4f85-9f24-1a5353554483}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="debug">
+      <UniqueIdentifier>{0c8d364c-8fc9-4257-9b18-f1d7279c84dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="engine">
+      <UniqueIdentifier>{67f8d68f-ab97-469c-898a-b5e8d5e0cc57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="engine\raytrace">
+      <UniqueIdentifier>{c40c8e5d-1ad8-49cb-848c-7f004e73cc94}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="engine\wireframe">
+      <UniqueIdentifier>{cefdd35f-4ade-4120-a487-efe79f8aee22}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="base">
+      <UniqueIdentifier>{42b45e87-d1b1-4f3a-bddd-6d3b020ec126}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="base\matrix">
+      <UniqueIdentifier>{a7648800-5606-4a38-b5a4-e8fa5dc30282}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="base\object">
+      <UniqueIdentifier>{9166aacb-3c82-40c9-b508-504e63b9809e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="base\world">
+      <UniqueIdentifier>{06efa90c-cc0a-493c-8747-11434579af0d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="base\optic">
+      <UniqueIdentifier>{d4f34037-f7f4-40dc-bdf4-8f6b0c998b9a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resources">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\src\qgl\extended\objects\box.cpp">
+      <Filter>extended\objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\qgl\extended\objects\csg.cpp">
+      <Filter>extended\objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\qgl\extended\objects\quadratic.cpp">
+      <Filter>extended\objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\qgl\extended\objects\sphere.cpp">
+      <Filter>extended\objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\qgl\extended\objects\sphere_light.cpp">
+      <Filter>extended\objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\qgl\raster\clip.cpp">
+      <Filter>raster</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\qgl\raster\fill.cpp">
+      <Filter>raster</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\qgl\raster\line.cpp">
+      <Filter>raster</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\qgl\raster\zbuf.cpp">
+      <Filter>raster</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\inc\qul\debug\trace.cpp">
+      <Filter>debug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\qgl\engine\raytrace\patterned_optical.cpp">
+      <Filter>engine\raytrace</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\qgl\engine\raytrace\patterned_surface.cpp">
+      <Filter>engine\raytrace</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\qgl\engine\raytrace\point_light.cpp">
+      <Filter>engine\raytrace</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\qgl\engine\raytrace\raytrace_luminant.cpp">
+      <Filter>engine\raytrace</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\qgl\engine\raytrace\raytrace_optical.cpp">
+      <Filter>engine\raytrace</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\qgl\engine\raytrace\raytrace_renderer.cpp">
+      <Filter>engine\raytrace</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\qgl\engine\raytrace\raytrace_scene.cpp">
+      <Filter>engine\raytrace</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\qgl\engine\raytrace\raytrace_surface.cpp">
+      <Filter>engine\raytrace</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\qgl\engine\raytrace\simple_ether.cpp">
+      <Filter>engine\raytrace</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\qgl\engine\raytrace\simple_optical.cpp">
+      <Filter>engine\raytrace</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\qgl\engine\raytrace\simple_scene.cpp">
+      <Filter>engine\raytrace</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\qgl\engine\raytrace\simple_surface.cpp">
+      <Filter>engine\raytrace</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\qgl\engine\wireframe\wireframe.cpp">
+      <Filter>engine\wireframe</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\qgl\base\matrix\matrix3d.cpp">
+      <Filter>base\matrix</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\qgl\base\matrix\transformer.cpp">
+      <Filter>base\matrix</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\qgl\base\matrix\vector3d.cpp">
+      <Filter>base\matrix</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\qgl\base\object\luminant.cpp">
+      <Filter>base\object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\qgl\base\object\object.cpp">
+      <Filter>base\object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\qgl\base\object\optical.cpp">
+      <Filter>base\object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\qgl\base\object\shape.cpp">
+      <Filter>base\object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\qgl\base\world\camera.cpp">
+      <Filter>base\world</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\qgl\base\world\renderer.cpp">
+      <Filter>base\world</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\qgl\base\world\scene.cpp">
+      <Filter>base\world</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\qgl\base\world\screen.cpp">
+      <Filter>base\world</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\qgl\base\optic\light.cpp">
+      <Filter>base\optic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\qgl\base\optic\ray.cpp">
+      <Filter>base\optic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\qgl\qgl.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\src\qgl\extended\objects\box.h">
+      <Filter>extended\objects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\qgl\extended\objects\csg.h">
+      <Filter>extended\objects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\qgl\extended\objects\quadratic.h">
+      <Filter>extended\objects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\qgl\extended\objects\sphere.h">
+      <Filter>extended\objects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\qgl\extended\objects\sphere_light.h">
+      <Filter>extended\objects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\qgl\raster\clip.h">
+      <Filter>raster</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\qgl\raster\fill.h">
+      <Filter>raster</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\qgl\raster\line.h">
+      <Filter>raster</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\qgl\raster\zbuf.h">
+      <Filter>raster</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\qul\debug\trace.h">
+      <Filter>debug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\qul\debug\trace_intf.h">
+      <Filter>debug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\qgl\engine\raytrace\patterned_optical.h">
+      <Filter>engine\raytrace</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\qgl\engine\raytrace\patterned_surface.h">
+      <Filter>engine\raytrace</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\qgl\engine\raytrace\point_light.h">
+      <Filter>engine\raytrace</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\qgl\engine\raytrace\raytrace_luminant.h">
+      <Filter>engine\raytrace</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\qgl\engine\raytrace\raytrace_optical.h">
+      <Filter>engine\raytrace</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\qgl\engine\raytrace\raytrace_renderer.h">
+      <Filter>engine\raytrace</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\qgl\engine\raytrace\raytrace_scene.h">
+      <Filter>engine\raytrace</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\qgl\engine\raytrace\raytrace_surface.h">
+      <Filter>engine\raytrace</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\qgl\engine\raytrace\simple_ether.h">
+      <Filter>engine\raytrace</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\qgl\engine\raytrace\simple_optical.h">
+      <Filter>engine\raytrace</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\qgl\engine\raytrace\simple_scene.h">
+      <Filter>engine\raytrace</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\qgl\engine\raytrace\simple_surface.h">
+      <Filter>engine\raytrace</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\qgl\engine\wireframe\wireframe.h">
+      <Filter>engine\wireframe</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\qgl\base\qgl_common.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\qgl\base\matrix\matrix3d.h">
+      <Filter>base\matrix</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\qgl\base\matrix\transformer.h">
+      <Filter>base\matrix</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\qgl\base\matrix\vector3d.h">
+      <Filter>base\matrix</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\qgl\base\object\luminant.h">
+      <Filter>base\object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\qgl\base\object\object.h">
+      <Filter>base\object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\qgl\base\object\optical.h">
+      <Filter>base\object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\qgl\base\object\shape.h">
+      <Filter>base\object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\qgl\base\world\camera.h">
+      <Filter>base\world</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\qgl\base\world\renderer.h">
+      <Filter>base\world</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\qgl\base\world\scene.h">
+      <Filter>base\world</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\qgl\base\world\screen.h">
+      <Filter>base\world</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\qgl\base\optic\light.h">
+      <Filter>base\optic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\qgl\base\optic\ray.h">
+      <Filter>base\optic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\qgl\qgl.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>
