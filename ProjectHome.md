@@ -1,0 +1,1 @@
+utility library providing reusable template based C++ modules dealing with data-structure encapsulation and algorithm implementation, and computationally intensive programs such as pure-software ray-trace graphics engine.
